@@ -10,7 +10,6 @@ func main() {
 
 	var low, high int32 = 0, 100
 	var chosen int32 = int32(rand.Intn(int(high-low))) + low
-	fmt.Println(chosen)
 	var attempts int32 = 0
 	fmt.Println(" Welcome to Guessing Game")
 	fmt.Printf("i have chosen a number between %d and %d , let's see if you can guess it \n", low, high)
