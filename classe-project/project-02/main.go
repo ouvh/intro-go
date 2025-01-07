@@ -124,6 +124,6 @@ func main() {
 		log.Fatal(errr)
 	}
 	f.Write(as_json)
-	log.Println("Operation ended sucessfully")
+	log.Println("Operation ended successfully .File created under the name output.json")
 
 }
