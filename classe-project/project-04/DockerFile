@@ -5,7 +5,8 @@ FROM golang:1.23.4 AS builder
 WORKDIR /app
 
 # Copy the Go modules and download dependencies
-COPY ./classe-project/project-04/go.mod  ./
+COPY ./classe-project/project-04/go.mod ./ 
+
 RUN go mod download
 
 # Copy the source code into the container
@@ -17,10 +18,10 @@ RUN go build -o api .
 # Step 2: Create the final image
 FROM alpine:latest
 
-# Install any required dependencies
+# Install any required dependencies (e.g., CA certificates)
 RUN apk --no-cache add ca-certificates
 
-# Set the working directory in the container
+# Set the working directory in the final image
 WORKDIR /root/
 
 # Copy the built Go application from the builder stage
@@ -30,4 +31,4 @@ COPY --from=builder /app/api .
 EXPOSE 8080
 
 # Command to run the Go application
-CMD ["/app/api"]
+CMD ["/root/api"]
