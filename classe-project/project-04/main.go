@@ -22,7 +22,7 @@ func main() {
 	store.StartSchedule()
 	log.Println("Storage Running and Scheduling is running")
 	service := service.Service{}
-	service.ReportDuration = 10 * time.Second // customize based on needs
+	service.ReportDuration = 86000 * time.Second // customize based on needs
 	service.Init(&store)
 	log.Println("Services are Running")
 
