@@ -5,8 +5,7 @@ FROM golang:1.23.4 AS builder
 WORKDIR /app
 
 # Copy the Go modules and download dependencies
-COPY ./classe-project/project-04/go.mod ./ 
-
+COPY ./classe-project/project-04/go.mod ./
 RUN go mod download
 
 # Copy the source code into the container
@@ -26,6 +25,9 @@ WORKDIR /root/
 
 # Copy the built Go application from the builder stage
 COPY --from=builder /app/api .
+
+# Verify the contents of /root/ directory to confirm that the binary exists
+RUN ls -l /root/
 
 # Expose the port your application listens on
 EXPOSE 8080
