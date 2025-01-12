@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ./classe-project/project-04/go.mod ./
 RUN go mod download
 
-# Copy the source code into the container
+# Copy the entire project directory
 COPY ./classe-project/project-04 .
 
 # Build the Go application
@@ -26,10 +26,13 @@ WORKDIR /app
 # Copy the built Go application from the builder stage
 COPY --from=builder /app/api /app/api
 
+# Copy the store.json file
+COPY --from=builder /app/store.json /app/store.json
+
 # Make sure the binary is executable
 RUN chmod +x /app/api
 
-# Verify the contents of /app directory to confirm that the binary exists
+# Verify the contents of /app directory
 RUN ls -l /app
 
 # Expose the port your application listens on
