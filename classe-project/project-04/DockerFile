@@ -30,4 +30,4 @@ COPY --from=builder /app/api .
 EXPOSE 8080
 
 # Command to run the Go application
-CMD ["./api"]
+CMD ["/app/api"]
