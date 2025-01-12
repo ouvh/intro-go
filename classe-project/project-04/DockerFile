@@ -5,7 +5,7 @@ FROM golang:1.19-alpine AS builder
 WORKDIR /app
 
 # Copy the Go modules and download dependencies
-COPY classe-project/project-04/go.mod classe-project/project-04/go.sum ./
+COPY classe-project/project-04/go.mod  ./
 RUN go mod download
 
 # Copy the source code into the container
