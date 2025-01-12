@@ -23,12 +23,10 @@ func GetField(salesReport SalesReport, field string) (interface{}, error) {
 		return salesReport.Timestamp, nil
 	case "TimestampTo":
 		return salesReport.Timestamp, nil
-
 	case "TotalRevenueFrom":
 		return salesReport.TotalRevenue, nil
 	case "TotalRevenueTo":
 		return salesReport.Timestamp, nil
-
 	case "TotalOrdersFrom":
 		return salesReport.TotalOrders, nil
 	case "TotalOrdersTo":

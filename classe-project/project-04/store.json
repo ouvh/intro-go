@@ -6,15 +6,15 @@
 				"title": "Harry Potter and the Philosopher's Stone",
 				"author": {
 					"id": 1,
-					"first_name": "student at the university and researcher ",
-					"last_name": "oussama",
-					"bio": "laaroussi"
+					"first_name": "J.K.",
+					"last_name": "Rowling",
+					"bio": "British author, best known for the Harry Potter series."
 				},
 				"genres": [
 					"Fantasy",
 					"Adventure"
 				],
-				"published_at": "2025-01-12T17:43:05.3745404+01:00",
+				"published_at": "2025-01-12T20:03:35.0015515+01:00",
 				"price": 19.99,
 				"stock": 98
 			}
@@ -25,30 +25,12 @@
 		"Authors": [
 			{
 				"id": 1,
-				"first_name": "student at the university and researcher ",
-				"last_name": "oussama",
-				"bio": "laaroussi"
-			},
-			{
-				"id": 2,
-				"first_name": "student at the university and researcher ",
-				"last_name": "oussama",
-				"bio": "laaroussi"
-			},
-			{
-				"id": 3,
-				"first_name": "student at the university and researcher ",
-				"last_name": "oussama",
-				"bio": "laaroussi"
-			},
-			{
-				"id": 4,
 				"first_name": "J.K.",
 				"last_name": "Rowling",
 				"bio": "British author, best known for the Harry Potter series."
 			}
 		],
-		"Index": 4
+		"Index": 1
 	},
 	"CustomerStore": {
 		"Customers": [
@@ -63,7 +45,7 @@
 					"postal_code": "12345",
 					"country": "UK"
 				},
-				"created_at": "2025-01-12T17:43:47.8400865+01:00"
+				"created_at": "2025-01-12T20:04:23.5489847+01:00"
 			}
 		],
 		"Index": 1
@@ -83,7 +65,7 @@
 						"postal_code": "12345",
 						"country": "UK"
 					},
-					"created_at": "2025-01-12T17:43:47.8400865+01:00"
+					"created_at": "2025-01-12T20:04:23.5489847+01:00"
 				},
 				"items": [
 					{
@@ -92,15 +74,15 @@
 							"title": "Harry Potter and the Philosopher's Stone",
 							"author": {
 								"id": 1,
-								"first_name": "student at the university and researcher ",
-								"last_name": "oussama",
-								"bio": "laaroussi"
+								"first_name": "J.K.",
+								"last_name": "Rowling",
+								"bio": "British author, best known for the Harry Potter series."
 							},
 							"genres": [
 								"Fantasy",
 								"Adventure"
 							],
-							"published_at": "2025-01-12T17:43:05.3745404+01:00",
+							"published_at": "2025-01-12T20:03:35.0015515+01:00",
 							"price": 19.99,
 							"stock": 98
 						},
@@ -108,11 +90,740 @@
 					}
 				],
 				"total_price": 39.98,
-				"created_at": "2025-01-12T17:44:16.0747037+01:00",
+				"created_at": "2025-01-12T20:04:44.2301933+01:00",
 				"status": "pending"
 			}
 		],
 		"Index": 1
+	},
+	"SalesReportStore": {
+		"SalesReports": [
+			{
+				"timestamp": "2025-01-12T19:58:41.0978079+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:58:41.0978079+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:58:51.0987841+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:58:51.0987841+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:01.0989756+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:01.0989756+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:11.0995706+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:11.0995706+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:21.0998462+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:21.0998462+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:31.100151+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:31.100151+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:41.1005872+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:41.1005872+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:51.1010207+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T19:59:51.1010207+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:01.1016485+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:01.1016485+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:11.1020684+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:11.1020684+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:21.1025154+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:21.1025154+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:31.1029651+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:31.1029651+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:41.1032829+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:41.1032829+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:51.1034841+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:00:51.1034841+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:01.1042225+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:01.1042225+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:11.1047225+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:11.1047225+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:21.1053361+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:21.1053361+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:31.1127395+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:31.1127395+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:41.1138607+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:41.1138607+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:51.1149487+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:01:51.1149487+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:01.115589+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:01.115589+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:11.1161479+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:11.1161479+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:21.116488+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:21.116488+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:31.1174734+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:31.1174734+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:41.1181008+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:41.1181008+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:51.119188+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:02:51.119188+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:01.1193982+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:01.1193982+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:11.1198554+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:11.1198554+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:21.1203422+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:21.1203422+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:31.1207741+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:31.1207741+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:41.1212191+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:41.1212191+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:51.1214664+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:03:51.1214664+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:01.1225031+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:01.1225031+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:11.122872+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:11.122872+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:21.1232563+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:21.1232563+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:31.1237381+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:31.1237381+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:41.1244982+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:41.1244982+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:04:51.1245563+01:00",
+				"total_revenue": 39.98,
+				"total_orders": 1,
+				"top_selling_books": [
+					{
+						"book": {
+							"id": 1,
+							"title": "Harry Potter and the Philosopher's Stone",
+							"author": {
+								"id": 1,
+								"first_name": "J.K.",
+								"last_name": "Rowling",
+								"bio": "British author, best known for the Harry Potter series."
+							},
+							"genres": [
+								"Fantasy",
+								"Adventure"
+							],
+							"published_at": "2025-01-12T20:03:35.0015515+01:00",
+							"price": 19.99,
+							"stock": 98
+						},
+						"quantity_sold": 2
+					}
+				]
+			},
+			{
+				"timestamp": "2025-01-12T20:05:01.1289414+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:01.1294321+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:11.1297156+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:11.1297156+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:21.130832+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:21.130832+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:31.1312001+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:31.1312001+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:41.1318829+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:41.1318829+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:51.1328614+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:05:51.1328614+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:01.1338687+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:01.1338687+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:11.1347043+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:11.1347043+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:21.1355765+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:21.1355765+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:31.1368091+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:31.1368091+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:41.1375633+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:41.1375633+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:51.1382001+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:06:51.1382001+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:01.1387001+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:01.1387001+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:11.1392865+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:11.1392865+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:21.139707+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:21.139707+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:31.1402296+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:31.1402296+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:41.1412577+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:41.1412577+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:51.1415937+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:07:51.1415937+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:08:01.1420061+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:08:01.1420061+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:08:11.1420233+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:08:11.1420233+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:08:21.1424405+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			},
+			{
+				"timestamp": "2025-01-12T20:08:21.1424405+01:00",
+				"total_revenue": 0,
+				"total_orders": 0,
+				"top_selling_books": []
+			}
+		],
+		"Index": 117,
+		"CurrentSales": []
 	},
 	"Filepath": "./store.json",
 	"Schedule": 5000000000

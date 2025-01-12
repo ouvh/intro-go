@@ -1,7 +1,6 @@
-package customerStore
+package salesReportStore
 
 import (
-	"errors"
 	"fmt"
 	"log"
 	"reflect"
@@ -9,87 +8,61 @@ import (
 	"sync"
 	"time"
 
-	model "um6p.ma/project-04/models/customer"
+	"um6p.ma/project-04/models/order"
+	model "um6p.ma/project-04/models/salesReport"
 	"um6p.ma/project-04/store/searchCriteria"
 )
 
-type CustomerExecutor interface {
-	Createcustomer(customer model.Customer) (model.Customer, error)
-	Getcustomer(id int) (model.Customer, error)
-	Updatecustomer(id int, customer model.Customer) (model.Customer, error)
-	Deletecustomer(id int) error
-	Searchcustomer(criteria searchCriteria.SearchCriteria) ([]model.Customer, error)
+type SalesReportExecutor interface {
+	CreateSalesReport(order model.SalesReport) (model.SalesReport, error)
+	SearchSalesReport(criteria searchCriteria.SearchCriteria) ([]model.SalesReport, error)
+	AddSale(order order.Order)
 }
 
-type CustomerStore struct {
+type SalesReportStore struct {
 	sync.Mutex
-	Customers []model.Customer
-	Index     int64
+	SalesReports []model.SalesReport
+	Index        int64
+	CurrentSales []order.Order
 }
 
-func (b *CustomerStore) CreateCustomer(customer model.Customer) (model.Customer, error) {
+func (b *SalesReportStore) AddSale(order order.Order) {
+	b.Lock()
+	defer b.Unlock()
+	b.CurrentSales = append(b.CurrentSales, order)
+
+}
+
+func (b *SalesReportStore) RetrieveSales() []order.Order {
+	b.Lock()
+	defer b.Unlock()
+	result := b.CurrentSales
+	b.CurrentSales = b.CurrentSales[:0]
+	return result
+
+}
+
+func (b *SalesReportStore) CreateSalesReport(salesReport model.SalesReport) (model.SalesReport, error) {
 
 	b.Lock()
 	defer b.Unlock()
 	b.Index++
-	customer.ID = int64(b.Index)
-	customer.CreatedAt = time.Now()
-	b.Customers = append(b.Customers, customer)
-	return customer, nil
+	salesReport.Timestamp = time.Now()
+	b.SalesReports = append(b.SalesReports, salesReport)
+	return salesReport, nil
 
 }
 
-func (b *CustomerStore) GetCustomer(id int) (model.Customer, error) {
-
+func (b *SalesReportStore) SearchSalesReport(criteria searchCriteria.SearchCriteria) ([]model.SalesReport, error) {
 	b.Lock()
 	defer b.Unlock()
-	for _, customer := range b.Customers {
-		if customer.ID == int64(id) {
-			return customer, nil
-		}
-	}
-	return model.Customer{}, errors.New("customer not found")
-
-}
-
-func (b *CustomerStore) UpdateCustomer(id int, customer model.Customer) (model.Customer, error) {
-	customer.ID = int64(id)
-	b.Lock()
-	defer b.Unlock()
-	for index, customer_ := range b.Customers {
-		if customer_.ID == int64(id) {
-			customer.CreatedAt = customer_.CreatedAt
-			b.Customers[index] = customer
-			return customer, nil
-		}
-	}
-	return customer, errors.New("customer not found")
-
-}
-
-func (b *CustomerStore) DeleteCustomer(id int) error {
-	b.Lock()
-	defer b.Unlock()
-	for index, customer := range b.Customers {
-		if customer.ID == int64(id) {
-			b.Customers = append(b.Customers[:index], b.Customers[index+1:]...)
-			return nil
-		}
-	}
-	return errors.New("customer not found")
-
-}
-
-func (b *CustomerStore) SearchCustomer(criteria searchCriteria.SearchCriteria) ([]model.Customer, error) {
-	b.Lock()
-	defer b.Unlock()
-	results := make([]model.Customer, 0)
+	results := make([]model.SalesReport, 0)
 
 	if len(criteria.Parameters) == 0 {
-		return b.Customers, nil
+		return b.SalesReports, nil
 	}
 
-	for _, order := range b.Customers {
+	for _, order := range b.SalesReports {
 		matched := true
 	loop:
 		for key, value := range criteria.Parameters {

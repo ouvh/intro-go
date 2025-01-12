@@ -15,6 +15,7 @@ import (
 	"um6p.ma/project-04/models/book"
 	"um6p.ma/project-04/models/customer"
 	"um6p.ma/project-04/models/order"
+	"um6p.ma/project-04/models/salesReport"
 	service "um6p.ma/project-04/services"
 	"um6p.ma/project-04/store/searchCriteria"
 )
@@ -58,7 +59,11 @@ func BookHandler(w http.ResponseWriter, r *http.Request, service *service.Servic
 		params := make(map[string]any, 0)
 		searchCriteria := searchCriteria.SearchCriteria{}
 		for key, value := range r.URL.Query() {
-			params[key] = value
+			if len(value) == 2 {
+				params[key] = value[0] + "+" + value[1]
+			} else {
+				params[key] = value[0]
+			}
 		}
 		e := httpStructVerifier.ValidateSearchCriteria(book.Fields, params, make([]string, 0))
 		if e != nil {
@@ -192,7 +197,11 @@ func AuthorHandler(w http.ResponseWriter, r *http.Request, service *service.Serv
 		params := make(map[string]any, 0)
 		searchCriteria := searchCriteria.SearchCriteria{}
 		for key, value := range r.URL.Query() {
-			params[key] = value
+			if len(value) == 2 {
+				params[key] = value[0] + "+" + value[1]
+			} else {
+				params[key] = value[0]
+			}
 		}
 		e := httpStructVerifier.ValidateSearchCriteria(author.Fields, params, make([]string, 0))
 		if e != nil {
@@ -326,7 +335,11 @@ func CustomerHandler(w http.ResponseWriter, r *http.Request, service *service.Se
 		params := make(map[string]any, 0)
 		searchCriteria := searchCriteria.SearchCriteria{}
 		for key, value := range r.URL.Query() {
-			params[key] = value
+			if len(value) == 2 {
+				params[key] = value[0] + "+" + value[1]
+			} else {
+				params[key] = value[0]
+			}
 		}
 		e := httpStructVerifier.ValidateSearchCriteria(customer.Fields, params, make([]string, 0))
 		if e != nil {
@@ -460,8 +473,13 @@ func OrderHandler(w http.ResponseWriter, r *http.Request, service *service.Servi
 		params := make(map[string]any, 0)
 		searchCriteria := searchCriteria.SearchCriteria{}
 		for key, value := range r.URL.Query() {
-			params[key] = value
+			if len(value) == 2 {
+				params[key] = value[0] + "+" + value[1]
+			} else {
+				params[key] = value[0]
+			}
 		}
+
 		e := httpStructVerifier.ValidateSearchCriteria(order.Fields, params, make([]string, 0))
 		if e != nil {
 			httpJsonParser.SetJson(httpError.ErrorResponse{Error: e.Error()}, w, http.StatusBadRequest)
@@ -589,6 +607,44 @@ func OrderHandlerWithPath(w http.ResponseWriter, r *http.Request, service *servi
 
 }
 
+func SalesReportHandler(w http.ResponseWriter, r *http.Request, service *service.Service) {
+	if r.Method == http.MethodGet {
+		params := make(map[string]any, 0)
+		searchCriteria := searchCriteria.SearchCriteria{}
+		for key, value := range r.URL.Query() {
+			if len(value) == 2 {
+				params[key] = value[0] + "+" + value[1]
+			} else {
+				params[key] = value[0]
+			}
+		}
+		e := httpStructVerifier.ValidateSearchCriteria(salesReport.Fields, params, make([]string, 0))
+		if e != nil {
+			httpJsonParser.SetJson(httpError.ErrorResponse{Error: e.Error()}, w, http.StatusBadRequest)
+			log.Println(e.Error())
+			return
+		}
+		searchCriteria.Parameters = params
+
+		result, err := service.SalesReportService.SearchSalesReport(searchCriteria)
+		if err != nil {
+			httpJsonParser.SetJson(httpError.ErrorResponse{Error: err.Error()}, w, http.StatusBadRequest)
+			log.Println(err.Error())
+			return
+		} else {
+			httpJsonParser.SetJson(result, w, http.StatusOK)
+			log.Println("Search Request Accepted")
+			return
+
+		}
+
+	} else {
+		httpJsonParser.SetJson(httpError.ErrorResponse{Error: "Invalid request method"}, w, http.StatusMethodNotAllowed)
+		log.Println("Invalid request method")
+		return
+	}
+}
+
 type Server struct {
 	Port string
 }
@@ -605,6 +661,8 @@ func (s *Server) StartServer(service *service.Service) error {
 
 	http.HandleFunc("/orders", DispatcherWrapper(ServiceInjector(service, OrderHandler)))
 	http.HandleFunc("/orders/", DispatcherWrapper(ServiceInjector(service, OrderHandlerWithPath)))
+
+	http.HandleFunc("/salesReport", DispatcherWrapper(ServiceInjector(service, SalesReportHandler)))
 
 	err := http.ListenAndServe(":"+s.Port, nil)
 

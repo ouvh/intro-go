@@ -73,6 +73,8 @@ func (b *OrderService) CreateOrder(order dao.OrderDAO) (model.Order, error) {
 
 	cu := model.Order{ID: 0, Customer: customer, Items: items, TotalPrice: TotalPrice, Status: order.Status}
 	result, err := b.Store.OrderStore.CreateOrder(cu)
+	// inject the new sales in the current sales list in the sales store
+	b.Store.SalesReportStore.AddSale(result)
 	return result, err
 
 }
