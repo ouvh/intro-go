@@ -1,0 +1,119 @@
+{
+	"BookStore": {
+		"Books": [
+			{
+				"id": 1,
+				"title": "Harry Potter and the Philosopher's Stone",
+				"author": {
+					"id": 1,
+					"first_name": "student at the university and researcher ",
+					"last_name": "oussama",
+					"bio": "laaroussi"
+				},
+				"genres": [
+					"Fantasy",
+					"Adventure"
+				],
+				"published_at": "2025-01-12T17:43:05.3745404+01:00",
+				"price": 19.99,
+				"stock": 98
+			}
+		],
+		"Index": 1
+	},
+	"AuthorStore": {
+		"Authors": [
+			{
+				"id": 1,
+				"first_name": "student at the university and researcher ",
+				"last_name": "oussama",
+				"bio": "laaroussi"
+			},
+			{
+				"id": 2,
+				"first_name": "student at the university and researcher ",
+				"last_name": "oussama",
+				"bio": "laaroussi"
+			},
+			{
+				"id": 3,
+				"first_name": "student at the university and researcher ",
+				"last_name": "oussama",
+				"bio": "laaroussi"
+			},
+			{
+				"id": 4,
+				"first_name": "J.K.",
+				"last_name": "Rowling",
+				"bio": "British author, best known for the Harry Potter series."
+			}
+		],
+		"Index": 4
+	},
+	"CustomerStore": {
+		"Customers": [
+			{
+				"id": 1,
+				"name": "John Doe",
+				"email": "johndoe@example.com",
+				"address": {
+					"street": "123 Main St",
+					"city": "London",
+					"state": "England",
+					"postal_code": "12345",
+					"country": "UK"
+				},
+				"created_at": "2025-01-12T17:43:47.8400865+01:00"
+			}
+		],
+		"Index": 1
+	},
+	"OrderStore": {
+		"Orders": [
+			{
+				"id": 1,
+				"customer": {
+					"id": 1,
+					"name": "John Doe",
+					"email": "johndoe@example.com",
+					"address": {
+						"street": "123 Main St",
+						"city": "London",
+						"state": "England",
+						"postal_code": "12345",
+						"country": "UK"
+					},
+					"created_at": "2025-01-12T17:43:47.8400865+01:00"
+				},
+				"items": [
+					{
+						"book": {
+							"id": 1,
+							"title": "Harry Potter and the Philosopher's Stone",
+							"author": {
+								"id": 1,
+								"first_name": "student at the university and researcher ",
+								"last_name": "oussama",
+								"bio": "laaroussi"
+							},
+							"genres": [
+								"Fantasy",
+								"Adventure"
+							],
+							"published_at": "2025-01-12T17:43:05.3745404+01:00",
+							"price": 19.99,
+							"stock": 98
+						},
+						"quantity": 2
+					}
+				],
+				"total_price": 39.98,
+				"created_at": "2025-01-12T17:44:16.0747037+01:00",
+				"status": "pending"
+			}
+		],
+		"Index": 1
+	},
+	"Filepath": "./store.json",
+	"Schedule": 5000000000
+}
