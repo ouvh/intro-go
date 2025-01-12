@@ -5,11 +5,11 @@ FROM golang:1.19-alpine AS builder
 WORKDIR /app
 
 # Copy the Go modules and download dependencies
-COPY go.mod go.sum ./
+COPY classe-project/project-04/go.mod classe-project/project-04/go.sum ./
 RUN go mod download
 
 # Copy the source code into the container
-COPY . .
+COPY ./classe-project/project-04 .
 
 # Build the Go application
 RUN go build -o api .
