@@ -11,9 +11,6 @@ import (
 
 func main() {
 
-	z := time.Now()
-	log.Println(z.GoString())
-
 	store := store.Store{}
 	store.Filepath = "./store.json"
 	store.Schedule = 5 * time.Second // customize based on needs
